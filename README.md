@@ -2,6 +2,8 @@
 
 Another python (2.7) redux of Kristins Spurgin's most super excellent <a href="https://github.com/UNC-Libraries/Ebook-Access-Checker">Ebook-Access-Checker!</a> This one has a GUI.
 
+![](http://www2.viu.ca/ds-dev/gitimages/kaneview.png)
+
 ####What it does
 
 Scrapes ebook/streaming video landing pages and confirms instititional access based on html source code. It does this with a GUI via <a href="http://www.wxpython.org/">wxPython</a>
