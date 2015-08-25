@@ -73,17 +73,17 @@ Ensure there are no headers in the .csv
 
 6: Add these vendor files to /vendors.
 
-4: Run inquisitorWx.py from the terminal.
+7: Run inquisitorWx.py from the terminal.
 
-5: Follow the GUI prompts.
+8: Follow the GUI prompts.
 
-6: The status bar on the GUI will count and display access messages + urls and titles for access failures.
+9: The status bar on the GUI will count and display access messages + urls and titles for access failures.
 
-7: Terminal display will write out errors.
+10: Terminal display will write out errors.
 
-8: When the script is complete, the status bar will write out the total run time.
+11: When the script is complete, the status bar will write out the total run time.
 
-9:The script will write the access message to the third column of the .csv, now located in /output.
+12: The script will write the access message to the third column of the .csv, now located in /output.
 
 ####Roadmap####
 
