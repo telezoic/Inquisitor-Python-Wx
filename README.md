@@ -55,7 +55,7 @@ and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here
   
 ####Instructions:####
 
-1: Place the scripts in a folder on your machine, and add a output folder.
+1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine.
 
 2: Modify the following lines in InquisitorWx.py to specify your folders for i/o:
     
