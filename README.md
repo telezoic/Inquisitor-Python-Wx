@@ -55,13 +55,13 @@ and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here
   
 ####Instructions:####
 
-1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine.
+1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine. [.gitkeep lets us load an empty folder structure - so you don't have to create it manually on your machine]
 
 2: Modify the following lines in InquisitorWx.py to specify your folders for i/o:
     
-  	vendorpath = "folder on your your machine/vendors/"
-  	csvinpath  = "folder on your your machine/input/" 
-  	csvoutpath = "folder on your your machine/output/"
+  	vendorpath = "folder on your machine/vendors/"
+  	csvinpath  = "folder on your machine/input/" 
+  	csvoutpath = "folder on your machine/output/"
 
 3: Create a .csv with a list of titles in the first column 	url[0] 
 and urls in the second column 	url[1]. Remove your EZproxy/Authentication prefix from the urls.
