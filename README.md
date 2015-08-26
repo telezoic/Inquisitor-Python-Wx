@@ -50,7 +50,7 @@ BeautifulSoup, requests, and Selenium are not part of the standard Python librar
 	pip install requests
 	pip install selenium
 	
-You can get PhantomJS <a href="http://phantomjs.org/">here.</a>
+You can get PhantomJS <a href="http://phantomjs.org/">here </a>
 and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here</a>.
   
 ####Instructions:####
