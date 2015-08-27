@@ -69,7 +69,6 @@ class MyForm(wx.Frame):
             self, message="Choose a vendor file",
             defaultDir=vendorpath,
             defaultFile="",
-            #wildcard=wildcard,
             style=wx.OPEN | wx.MULTIPLE | wx.CHANGE_DIR
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -91,7 +90,6 @@ class MyForm(wx.Frame):
             self, message="Choose a file",
             defaultDir=csvinpath, 
             defaultFile="",
-            #wildcard=wildcard,
             style=wx.OPEN | wx.MULTIPLE | wx.CHANGE_DIR
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -112,7 +110,6 @@ class MyForm(wx.Frame):
             self, message="Save file as ...(.csv)", 
             defaultDir=csvoutpath, 
             defaultFile="", 
-            #wildcard=wildcard,
             style=wx.SAVE
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -152,13 +149,13 @@ class MyForm(wx.Frame):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("kanelong.png") #switch your image here, if you don't like my son's artwork!
+        bmp = wx.Bitmap("kanelong.png") #switch out your image here, if you don't like my son's artwork!
         dc.DrawBitmap(bmp, 0, 0)
 
 
 #------------------------------------------------------------------------
 
-# Run the program
+# Run it!
 if __name__ == "__main__":
     app = wx.App(False)
     frame = MyForm()
