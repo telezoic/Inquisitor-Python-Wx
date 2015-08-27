@@ -1,6 +1,6 @@
 # Inquisitor-Python-Wx#
 
-Another python (2.7) redux of Kristins Spurgin's most super excellent <a href="https://github.com/UNC-Libraries/Ebook-Access-Checker">Ebook-Access-Checker!</a> This one has a GUI.
+Another python (2.7) redux of Kristina Spurgin's most super excellent <a href="https://github.com/UNC-Libraries/Ebook-Access-Checker">Ebook-Access-Checker!</a> This one has a GUI.
 
 ![](http://www2.viu.ca/ds-dev/gitimages/kaneview1.png)
 
