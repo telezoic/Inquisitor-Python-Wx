@@ -69,19 +69,19 @@ Ensure there are no headers in the .csv
 
 4: Add your input .csv file[s] to /input.
 
-5: Mod/add your own vendor scripts as needed based on the apprropriate matching syntax [from your vendor's html source code].
+5: Mod/add your own vendor scripts as needed based on the appropriate matching syntax [from your vendor's html source code].
 
 6: Add these vendor files to /vendors.
 
 7: Run inquisitorWx.py from the terminal.
 
-8: Follow the GUI prompts.
+8: Follow the GUI prompts: select a vendor file; select a .csv input file; name your .csv output; start. Each selection will be confirmed in the status bar.
 
-9: The status bar on the GUI will count and display access messages + urls and titles for access failures.
+9: The status bar on the GUI will count and display access messages + urls + titles for access failures.
 
 10: Terminal display will write out errors.
 
-11: When the script is complete, the status bar will write out the total run time.
+11: When the script is complete, the status bar will display the total run time.
 
 12: The script will write the access message to the third column of the .csv, now located in /output.
 
