@@ -62,9 +62,9 @@ class MyForm(wx.Frame):
 
     #----------------------------------------------------------------------
     def onOpenFileV(self, event): 
-        """
-        Create and show the Open FileDialog
-        """
+       
+        # Create and show the Open FileDialog
+        
         dlg = wx.FileDialog(
             self, message="Choose a vendor file",
             defaultDir=vendorpath,
@@ -83,9 +83,9 @@ class MyForm(wx.Frame):
 
     #----------------------------------------------------------------------
     def onOpenFile(self, event): 
-        """
-        Create and show the Open FileDialog
-        """
+       
+       # Create and show the Open FileDialog
+       
         dlg = wx.FileDialog(
             self, message="Choose a file",
             defaultDir=csvinpath, 
@@ -103,9 +103,9 @@ class MyForm(wx.Frame):
  
     #----------------------------------------------------------------------
     def onSaveFile(self, event):
-        """
-        Create and show the Save FileDialog
-        """
+        
+        # Create and show the Save FileDialog
+        
         dlg = wx.FileDialog(
             self, message="Save file as ...(.csv)", 
             defaultDir=csvoutpath, 
@@ -122,6 +122,8 @@ class MyForm(wx.Frame):
  
 #----------------------------------------------------------------------
     def startButton(self, event): 
+     
+        # Set up the script . . . 
     
         urls = csv.reader(open(csvopengui, "rU"))
         outurls = csv.writer(open(csvsavegui, "wb"))
@@ -138,9 +140,9 @@ class MyForm(wx.Frame):
 #-----------------------------------------------------------------------
 
     def OnEraseBackground(self, evt):
-        """
-        Add a picture to the background
-        """
+       
+       # Add a picture to the background
+       
         # yanked from ColourDB.py
         dc = evt.GetDC()
 
