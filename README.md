@@ -50,6 +50,8 @@ BeautifulSoup, requests, and Selenium are not part of the standard Python librar
 	pip install requests
 	pip install selenium
 	
+Windows users - if you get SSL errors after installing ```requests``` do ```pip install requests[security]``` instead.
+	
 You can get PhantomJS <a href="http://phantomjs.org/">here </a>
 and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here</a>.
   
@@ -63,30 +65,32 @@ and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here
   	csvinpath  = "folder on your machine/input/" 
   	csvoutpath = "folder on your machine/output/"
 
-3: Create a .csv with a list of titles in the first column 	url[0] 
+3: Windows users, modify line 154 to give the full path to the image ``` bmp = wx.Bitmap("folder on your machine/kanelong.png")```
+
+4: Create a .csv with a list of titles in the first column 	url[0] 
 and urls in the second column 	url[1]. Remove your EZproxy/Authentication prefix from the urls.
 Ensure there are no headers in the .csv
 
-4: Add your input .csv file[s] to /input.
+5: Add your input .csv file[s] to /input.
 
-5: Mod/add your own vendor scripts as needed based on the appropriate matching syntax [from your vendor's html source code].
+6: Mod/add your own vendor scripts as needed based on the appropriate matching syntax [from your vendor's html source code].
 
-6: Add these vendor files to /vendors.
+7: Add these vendor files to /vendors.
 
-7: Run inquisitorWx.py from the terminal.
+8: Run inquisitorWx.py from the terminal.
 
-8: Follow the GUI prompts: select a vendor file; select a .csv input file; name your .csv output; start. Each selection will be confirmed in the status bar.
+9: Follow the GUI prompts: select a vendor file; select a .csv input file; name your .csv output; start. Each selection will be confirmed in the status bar.
 
-9: The status bar on the GUI will count and display access messages + urls + titles for access failures.
+10: The status bar on the GUI will count and display access messages + urls + titles for access failures.
 
-10: Terminal display will write out errors.
+11: Terminal display will write out errors.
 
-11: When the script is complete, the status bar will display the total run time.
+12: When the script is complete, the status bar will display the total run time.
 
-12: The script will write the access message to the third column of the .csv, now located in /output.
+13: The script will write the access message to the third column of the .csv, now located in /output.
 
 ####Roadmap####
 
-1: Windows testing [it's all OSX so far]
+1: Correct BeautifulSoup markup warning for windows.
 
 
