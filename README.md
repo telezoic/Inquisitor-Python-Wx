@@ -56,6 +56,7 @@ You can get PhantomJS <a href="http://phantomjs.org/">here </a>
 and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here</a>.
   
 ####Instructions:####
+[tested in OSX and Windows]
 
 1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine. [.gitkeep lets us load an empty folder structure - so you don't have to create it manually on your machine]
 
