@@ -16,9 +16,9 @@ csvopengui = 0
 csvsavegui = 0
 
 #modify your i/o paths below or uncomment and reset defaultDir=self.currentDirectory:
-vendorpath = "/Users/daniel/Desktop/wxBits/vendors/"
-csvinpath  = "/Users/daniel/Desktop/wxBits/input/" 
-csvoutpath = "/Users/daniel/Desktop/wxBits/output/"
+vendorpath = "folder on your machine/vendors/"
+csvinpath  = "folder on your machine/input/" 
+csvoutpath = "folder on your machine/output/"
 
 
 
@@ -28,7 +28,7 @@ class MyForm(wx.Frame):
     #----------------------------------------------------------------------
     def __init__(self):
         wx.Frame.__init__(self, None, wx.ID_ANY, 
-                          "Inquisitor Mark One", size=(470, 237), style=wx.MINIMIZE_BOX | wx.CAPTION |  wx.CLOSE_BOX) 
+                          "Inquisitor Mark One", size=(470, 245), style=wx.MINIMIZE_BOX | wx.CAPTION |  wx.CLOSE_BOX) 
                            #size controls for frame [and the image] 
         panel = wx.Panel(self, wx.ID_ANY,)
         #self.currentDirectory = os.getcwd()wx.MINIMIZE_BOX | wx.MAXIMIZE_BOX 
@@ -56,7 +56,7 @@ class MyForm(wx.Frame):
     
         panel.SetSizer(sizer)
         self.CreateStatusBar()
-        self.Bind(wx.EVT_ERASE_BACKGROUND, self.OnEraseBackground)
+        panel.Bind(wx.EVT_ERASE_BACKGROUND, self.OnEraseBackground)
 
  
 
@@ -151,7 +151,8 @@ class MyForm(wx.Frame):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("kanelong.png") #switch out your image here, if you don't like my son's artwork!
+        bmp = wx.Bitmap("folder on your machine/kanelong.png") #add the full path to the image 
+                                        # and/or switch it out if you don't like my son's artwork!
         dc.DrawBitmap(bmp, 0, 0)
 
 
