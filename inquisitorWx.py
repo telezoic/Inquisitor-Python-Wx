@@ -151,7 +151,7 @@ class MyForm(wx.Frame):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("folder on your machine/kanelong.png") #add the full path to the image 
+        bmp = wx.Bitmap("kanelong.png") #Windows users, add the full path to the image 
                                         # and/or switch it out if you don't like my son's artwork!
         dc.DrawBitmap(bmp, 0, 0)
 
