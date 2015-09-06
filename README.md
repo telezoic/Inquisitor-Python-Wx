@@ -65,7 +65,7 @@ and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here
   	csvinpath  = "folder on your machine/input/" 
   	csvoutpath = "folder on your machine/output/"
 
-3: Windows users, modify line 154 to give the full path to the image ``` bmp = wx.Bitmap("folder on your machine/kanelong.png")```
+3: Windows users, modify line 154 to give the full path to the image ``` bmp = wx.Bitmap("kanelong.png")```
 
 4: Create a .csv with a list of titles in the first column 	url[0] 
 and urls in the second column 	url[1]. Remove your EZproxy/Authentication prefix from the urls.
