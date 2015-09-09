@@ -1,4 +1,4 @@
-# Inquisitor-Python-Wx#
+# Inquisitor-Python-Wx#test2
 
 Another python (2.7) redux of Kristina Spurgin's most super excellent <a href="https://github.com/UNC-Libraries/Ebook-Access-Checker">Ebook-Access-Checker!</a> This one has a GUI.
 
@@ -50,7 +50,7 @@ BeautifulSoup, requests, and Selenium are not part of the standard Python librar
 	pip install requests
 	pip install selenium
 	
-Windows users - if you get SSL errors after installing ```requests``` do ```pip install requests[security]``` instead.
+Windows users - if you get SSL errors after installing ```requests``` try ```pip install requests[security]``` instead.
 	
 You can get PhantomJS <a href="http://phantomjs.org/">here </a>
 and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here</a>.
