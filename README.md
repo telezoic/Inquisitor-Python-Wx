@@ -94,4 +94,6 @@ Ensure there are no headers in the .csv
 
 1: Correct BeautifulSoup markup warning for windows.
 
+2: Bundle this up as an executable.   
+
 
