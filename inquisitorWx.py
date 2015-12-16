@@ -15,10 +15,11 @@ vendoropengui = 0
 csvopengui = 0
 csvsavegui = 0
 
-#modify your i/o paths below or uncomment and reset defaultDir=self.currentDirectory:
-vendorpath = "folder on your machine/vendors/"
-csvinpath  = "folder on your machine/input/" 
-csvoutpath = "folder on your machine/output/"
+#various paths
+imgpath = os.path.join(os.getcwd(), 'image', 'kanelong.png')
+vendorpath = os.path.join(os.getcwd(), 'vendors')
+csvinpath  = os.path.join(os.getcwd(), 'input')
+csvoutpath = os.path.join(os.getcwd(), 'output')
 
 
 
@@ -68,7 +69,7 @@ class MyForm(wx.Frame):
         dlg = wx.FileDialog(
             self, message="Choose a vendor file",
             defaultDir=vendorpath,
-            defaultFile="",
+            defaultFile="*.py",
             style=wx.OPEN | wx.MULTIPLE | wx.CHANGE_DIR
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -89,7 +90,7 @@ class MyForm(wx.Frame):
         dlg = wx.FileDialog(
             self, message="Choose a file",
             defaultDir=csvinpath, 
-            defaultFile="",
+            defaultFile="*.csv",
             style=wx.OPEN | wx.MULTIPLE | wx.CHANGE_DIR
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -109,7 +110,7 @@ class MyForm(wx.Frame):
         dlg = wx.FileDialog(
             self, message="Save file as ...(.csv)", 
             defaultDir=csvoutpath, 
-            defaultFile="", 
+            defaultFile=".csv", 
             style=wx.SAVE
             )
         if dlg.ShowModal() == wx.ID_OK:
@@ -151,8 +152,7 @@ class MyForm(wx.Frame):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("kanelong.png") #Windows users, add the full path to the image 
-                                        # and/or switch it out if you don't like my son's artwork!
+        bmp = wx.Bitmap(imgpath) #to the image path - switch it out if you don't like my son's artwork!
         dc.DrawBitmap(bmp, 0, 0)
 
 
