@@ -60,35 +60,27 @@ and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here
 
 1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine. [.gitkeep lets us load an empty folder structure - so you don't have to create it manually on your machine]
 
-2: Modify the following lines in InquisitorWx.py to specify your folders for i/o:
-    
-  	vendorpath = "folder on your machine/vendors/"
-  	csvinpath  = "folder on your machine/input/" 
-  	csvoutpath = "folder on your machine/output/"
-
-3: Windows users, modify line 154 to give the full path to the image ``` bmp = wx.Bitmap("kanelong.png")```
-
-4: Create a .csv with a list of titles in the first column 	url[0] 
+2: Create a .csv with a list of titles in the first column 	url[0] 
 and urls in the second column 	url[1]. Remove your EZproxy/Authentication prefix from the urls.
 Ensure there are no headers in the .csv
 
-5: Add your input .csv file[s] to /input.
+3: Add your input .csv file[s] to /input.
 
-6: Mod/add your own vendor scripts as needed based on the appropriate matching syntax [from your vendor's html source code].
+4: Mod/add your own vendor scripts as needed based on the appropriate matching syntax [from your vendor's html source code].
 
-7: Add these vendor files to /vendors.
+5: Add these vendor files to /vendors.
 
-8: Run inquisitorWx.py from the terminal.
+6: Run inquisitorWx.py from the terminal.
 
-9: Follow the GUI prompts: select a vendor file; select a .csv input file; name your .csv output; start. Each selection will be confirmed in the status bar.
+7: Follow the GUI prompts: select a vendor file; select a .csv input file; name your .csv output; start. Each selection will be confirmed in the status bar.
 
-10: The status bar on the GUI will count and display access messages + urls + titles for access failures.
+8: The status bar on the GUI will count and display access messages + urls + titles for access failures.
 
-11: Terminal display will write out errors.
+9: Terminal display will write out errors.
 
-12: When the script is complete, the status bar will display the total run time.
+10: When the script is complete, the status bar will display the total run time.
 
-13: The script will write the access message to the third column of the .csv, now located in /output.
+11: The script will write the access message to the third column of the .csv, now located in /output.
 
 ####Roadmap####
 
