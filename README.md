@@ -6,7 +6,7 @@ Another python (2.7) redux of Kristina Spurgin's most super excellent <a href="h
 
 ####What it does
 
-Scrapes ebook/streaming video landing pages and confirms instititional access based on html source code. It does this with a GUI via <a href="http://www.wxpython.org/">wxPython</a>
+Scrapes ebook/streaming video landing pages and confirms institutional access based on html source code. It does this with a GUI via <a href="http://www.wxpython.org/">wxPython</a>
 
 ####What it doesn't . . . 
 
@@ -14,7 +14,7 @@ Trigger DDA autopurchases/short-term loans
 
 ####*What's different this time . . .*
 
-1: Speed. The Inquisitor-Python runs on BeautifulSoup and Requests. Speed is much improved in the absence of a headless browser. [note: The javascript heavy Proquest/ebrary pages call for a headless browser, you may have other vendors with similar demands]
+1: Speed. The Inquisitor-Python runs on BeautifulSoup and Requests. Speed is much improved in the absence of a headless browser. [note: The javascript heavy Proquest/ebrary and the Ebsco pages call for a headless browser, you may have other vendors with similar demands]
 
 2: User interface is a GUI.
 
