@@ -4,15 +4,15 @@ Another python (2.7) redux of Kristina Spurgin's most super excellent <a href="h
 
 ![](http://www2.viu.ca/ds-dev/gitimages/kaneview1.png)
 
-####What it does
+#### What it does
 
 Scrapes ebook/streaming video landing pages and confirms institutional access based on html source code. It does this with a GUI via <a href="http://www.wxpython.org/">wxPython</a>
 
-####What it doesn't . . . 
+#### What it doesn't . . . 
 
 Trigger DDA autopurchases/short-term loans
 
-####*What's different this time . . .*
+#### *What's different this time . . .*
 
 1: Speed. The Inquisitor-Python runs on BeautifulSoup and Requests. Speed is much improved in the absence of a headless browser. [note: The javascript heavy Proquest/ebrary and the Ebsco pages call for a headless browser, you may have other vendors with similar demands]
 
@@ -26,7 +26,7 @@ Trigger DDA autopurchases/short-term loans
 
   
 	
-####What do you need?
+#### What do you need?
 
 	import os
   
@@ -56,7 +56,7 @@ Windows users - if you get SSL errors after installing ```requests``` try ```pip
 You can get PhantomJS <a href="http://phantomjs.org/">here </a>
 and you can get wxPython <a href="http://www.wxpython.org/download.php#osx">here</a>.
   
-####Instructions:####
+#### Instructions:####
 [tested in OSX and Windows]
 
 1: Place the Inquisitor-Python-Wx folders and files in a folder on your machine. [.gitkeep lets us load an empty folder structure - so you don't have to create it manually on your machine]
