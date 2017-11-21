@@ -84,6 +84,3 @@ Ensure there are no headers in the .csv
 11: The script will write the access message to the third column of the .csv, now located in /output.
 
 
-2: Bundle this up as an executable.   
-
-
